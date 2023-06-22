@@ -4,6 +4,14 @@ public class ComputadorDeEscritorio extends DispositivoTecnologico {
 	private String chasis;
 	private String pantalla;
 
+	public ComputadorDeEscritorio(String marca, String ram, String almacenamiento, String procesador, String modelo, int añoDeFabricacion, double precio, int stock, String tarjetaDeVideo, String fuenteDePoder, String chasis, String pantalla) {
+		super(marca, ram, almacenamiento, procesador, modelo, añoDeFabricacion, precio, stock);
+		this.tarjetaDeVideo = tarjetaDeVideo;
+		this.fuenteDePoder = fuenteDePoder;
+		this.chasis = chasis;
+		this.pantalla = pantalla;
+	}
+
 	public String getTarjetaDeVideo() {
 		return this.tarjetaDeVideo;
 	}

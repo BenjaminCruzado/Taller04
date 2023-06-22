@@ -3,9 +3,17 @@ public class Cliente {
 	private String apellido;
 	private String correo;
 	private String numeroDeCelular;
-	private String edtadoCivil;
+	private String estadoCivil;
 	private String ciudad;
 	private Tienda tienda;
+	public Cliente(String nombre, String apellido, String correo, String numeroDeCelular, String estadoCivil, String ciudad) {
+		this.nombre = nombre;
+		this.apellido = apellido;
+		this.correo = correo;
+		this.numeroDeCelular = numeroDeCelular;
+		this.estadoCivil = estadoCivil;
+		this.ciudad = ciudad;
+	}
 
 	public String getNombre() {
 		return this.nombre;
@@ -40,11 +48,11 @@ public class Cliente {
 	}
 
 	public String getEdtadoCivil() {
-		return this.edtadoCivil;
+		return this.estadoCivil;
 	}
 
 	public void setEdtadoCivil(String edtadoCivil) {
-		this.edtadoCivil = edtadoCivil;
+		this.estadoCivil = edtadoCivil;
 	}
 
 	public String getCiudad() {
@@ -55,7 +63,4 @@ public class Cliente {
 		this.ciudad = ciudad;
 	}
 
-	public Cliente(String nombre, String apellido, String correo, String numeroDeCelular, String estadoCivil, String ciudad) {
-		throw new UnsupportedOperationException();
-	}
 }

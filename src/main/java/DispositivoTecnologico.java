@@ -8,6 +8,16 @@ public abstract class DispositivoTecnologico {
 	private double precio;
 	private int stock;
 	private Tienda tienda;
+	public DispositivoTecnologico(String marca, String ram, String almacenamiento, String procesador, String modelo, int añoDeFabricacion, double precio, int stock) {
+		this.marca = marca;
+		this.ram = ram;
+		this.almacenamiento = almacenamiento;
+		this.procesador = procesador;
+		this.modelo = modelo;
+		this.añoDeFabricacion = añoDeFabricacion;
+		this.precio = precio;
+		this.stock = stock;
+	}
 
 	public String getMarca() {
 		return this.marca;

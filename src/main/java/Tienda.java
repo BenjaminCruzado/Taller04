@@ -5,6 +5,10 @@ public class Tienda {
 	private ArrayList<DispositivoTecnologico> producto;
 	private ArrayList<Cliente> clientes = new ArrayList<Cliente>();
 	private ArrayList<DispositivoTecnologico> dispositivos_tecnologicos = new ArrayList<DispositivoTecnologico>();
+	public Tienda(String direccion) {
+		this.direccion = direccion;
+		this.producto = new ArrayList<>();
+	}
 
 	public String getDireccion() {
 		return this.direccion;
@@ -42,7 +46,4 @@ public class Tienda {
 		throw new UnsupportedOperationException();
 	}
 
-	public Tienda(String direccion) {
-		throw new UnsupportedOperationException();
-	}
 }

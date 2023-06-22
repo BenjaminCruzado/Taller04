@@ -3,6 +3,13 @@ public class Noteboock extends DispositivoTecnologico {
 	private String tipoDeTeclado;
 	private String bateria;
 
+	public Noteboock(String marca, String ram, String almacenamiento, String procesador, String modelo, int añoDeFabricacion, double precio, int stock, String resolucionDePantalla, String tipoDeTeclado, String bateria) {
+		super(marca, ram, almacenamiento, procesador, modelo, añoDeFabricacion, precio, stock);
+		this.resolucionDePantalla = resolucionDePantalla;
+		this.tipoDeTeclado = tipoDeTeclado;
+		this.bateria = bateria;
+	}
+
 	public String getResolucionDePantalla() {
 		return this.resolucionDePantalla;
 	}

@@ -4,6 +4,12 @@ public class Tablet extends DispositivoTecnologico {
 	private String resolucionDePantalla;
 	private ArrayList<String> accesorios;
 
+	public Tablet(String marca, String ram, String almacenamiento, String procesador, String modelo, int añoDeFabricacion, double precio, int stock, String resolucionDePantalla) {
+		super(marca, ram, almacenamiento, procesador, modelo, añoDeFabricacion, precio, stock);
+		this.resolucionDePantalla = resolucionDePantalla;
+		this.accesorios = null;
+	}
+
 	public String getResolucionDePantalla() {
 		return this.resolucionDePantalla;
 	}
@@ -13,10 +19,10 @@ public class Tablet extends DispositivoTecnologico {
 	}
 
 	public ArrayList<String> getAccesorios() {
-		throw new UnsupportedOperationException();
+		return this.accesorios;
 	}
 
 	public void setAccesorios(ArrayList<String> accesorios) {
-		throw new UnsupportedOperationException();
+		this.accesorios = accesorios;
 	}
 }
