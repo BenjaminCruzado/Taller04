@@ -1,10 +1,11 @@
 import java.util.ArrayList;
+import java.util.Scanner;
 
 public class Tienda {
 	private String direccion;
 	private ArrayList<DispositivoTecnologico> producto;
 	private ArrayList<Cliente> clientes = new ArrayList<Cliente>();
-	private ArrayList<DispositivoTecnologico> dispositivos_tecnologicos = new ArrayList<DispositivoTecnologico>();
+	private ArrayList<DispositivoTecnologico> dispositivosTecnologicos = new ArrayList<DispositivoTecnologico>();
 	public Tienda(String direccion) {
 		this.direccion = direccion;
 		this.producto = new ArrayList<>();
@@ -19,21 +20,25 @@ public class Tienda {
 	}
 
 	public ArrayList<DispositivoTecnologico> getProducto() {
-		throw new UnsupportedOperationException();
+		return this.producto;
 	}
 
 	public void setProducto(ArrayList<DispositivoTecnologico> producto) {
-		throw new UnsupportedOperationException();
+		this.producto = producto;
 	}
 
 	public void agregarCliente(Cliente cliente) {
-		throw new UnsupportedOperationException();
+		clientes.add(cliente);
 	}
-
-	public void agregarDispositivo(DispositivoTecnologico dispositivo) {
-		throw new UnsupportedOperationException();
+	public void agregarNoteboock(Noteboock notboock){
+		dispositivosTecnologicos.add(notboock);
 	}
-
+	public void agregarTablet(Tablet tablet){
+		dispositivosTecnologicos.add(tablet);
+	}
+	public void agregarComputadorDeEscritorio(ComputadorDeEscritorio computadorDeEscritorio){
+		dispositivosTecnologicos.add(computadorDeEscritorio);
+	}
 	public void obtenerInformacionDeDispositivo(DispositivoTecnologico dispositivo) {
 		throw new UnsupportedOperationException();
 	}

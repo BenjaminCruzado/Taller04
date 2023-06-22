@@ -7,7 +7,7 @@ public class Tablet extends DispositivoTecnologico {
 	public Tablet(String marca, String ram, String almacenamiento, String procesador, String modelo, int añoDeFabricacion, double precio, int stock, String resolucionDePantalla) {
 		super(marca, ram, almacenamiento, procesador, modelo, añoDeFabricacion, precio, stock);
 		this.resolucionDePantalla = resolucionDePantalla;
-		this.accesorios = null;
+		this.accesorios = new ArrayList<>();
 	}
 
 	public String getResolucionDePantalla() {
